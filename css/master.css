@@ -1,0 +1,143 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #F6F4E5;
+  padding: 42px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+p{
+  margin-right: 20px;
+}
+
+footer {
+  min-height: 15vh;
+}
+
+header h1 {
+  color: #0043ff;
+  padding: 0.25em;
+  font-size: 7em;
+  text-align: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  margin:10px;
+}
+
+article {
+  min-height: 70vh;
+}
+
+/* Styles pour le menu */
+nav a {
+  color: black;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4em;
+  display: flex;
+  text-align: center;
+  padding: 16px;
+}
+
+nav {
+  float: right;
+  left: -50%;
+  position: relative;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  left: 50%;
+  position: relative;
+}
+
+ul li {
+  display: block;
+  float: left;
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.image:hover {
+  transform: perspective(400px) rotateY(45deg);
+  transform: skew(50deg);
+  transform: rotate(20deg);
+}
+
+step1 {
+  text-align: justify;
+  text-align: left;
+}
+
+step2 {
+  text-align: justify;
+  text-align: left;
+  margin-left: 40em;
+}
+
+.content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.content video {
+  display: block;
+  flex-basis: 650px;
+}
+
+.content p {
+  flex-basis: 650px;
+  padding: 2em;
+}
+
+/* Styles pour faire supperposer les images et apparaitre */
+figure{
+  position: relative;
+}
+
+.appear01{
+transition: all 1s ease;
+position: absolute;
+}
+
+.appear02{
+transform: scale(0.1);
+opacity: 0;
+transition: all 1s ease;
+}
+
+figure:hover .appear01{
+  transform: scale(0.1);
+  opacity: 0;
+}
+
+figure:hover .appear02{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.bee-home{
+  align-items: center;
+   position:absolute;
+   z-index: 1;
+}
+
+.top{
+  position:absolute;
+      top: 5px;
+      left: 6px;
+      z-index: 2;
+}

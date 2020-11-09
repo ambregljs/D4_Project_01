@@ -4,15 +4,18 @@ body {
   justify-content: space-between;
   background: #F6F4E5;
   padding: 42px;
+  text-align: left;
   margin-top: 0;
   margin-right: auto;
   margin-bottom: 0;
   margin-left: auto;
 }
 
-p{
-  margin-right: 20px;
+.content-text{
+  margin-left: 35em;
+  margin-right: 10em;
 }
+
 
 footer {
   min-height: 15vh;
@@ -68,12 +71,12 @@ ul li {
   padding: 0px 10px;
   margin: 0px;
 }
-
-.image:hover {
+/*.image:hover {
   transform: perspective(400px) rotateY(45deg);
   transform: skew(50deg);
   transform: rotate(20deg);
 }
+*/
 
 step1 {
   text-align: justify;
@@ -106,6 +109,7 @@ step2 {
 /* Styles pour faire supperposer les images et apparaitre */
 figure{
   position: relative;
+	float: left;
 }
 
 .appear01{
